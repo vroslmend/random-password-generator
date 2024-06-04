@@ -71,18 +71,44 @@ body {
    font-size: 1rem;
    margin-top: 20px;
    margin-bottom: 32px;
+   cursor: pointer;
+   overflow: hidden;
+   transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #9dff9d;
+    color: #1C1C1C;
+}
+
+button:active {
+    background-color: #d6ffd6;
+    color: #1C1C1C;
+    transition-duration: 0.05s;
 }
 
 .password-form input {
     margin-top: 32px;
     border: none;
-    border-radius: 2px;
+    border-radius: 6px;
     background-color: #273549;
     width: 211px;
     height: 29px;
     color: #55F991;
-    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-family: 'Inter', 'Times New Roman', serif;
     font-weight: 500;
     font-size: 1rem;
     outline: none;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.password-form i {
+    color: #eee8ff80;
+    opacity: 0%;
+    transition-duration: 0.4s;
+}
+
+.password-form:hover i {
+    opacity: 100%;
 }
