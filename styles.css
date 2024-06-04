@@ -1,20 +1,31 @@
 body {
     background-color: #1C1C1C;
-    text-align: center;
+    display: flex; 
+    min-height: 100vh; 
+    justify-content: center; 
+    align-items: center;
 }
 
+
 .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 550px;
     height: 550px;
     background-color: #1F2937;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 20px;
-    max-width: fit-content;
+    padding-top: 8px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.h1 {
+    line-height: 50%;
 }
 
 #top-text {
@@ -22,9 +33,9 @@ body {
     font-weight: 800;
     color: white;
     font-size: 2.5rem;
-    margin-top: 75px;
-    margin-bottom: 0px;
     text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 #bottom-text {
@@ -32,8 +43,9 @@ body {
     font-weight: 800;
     color: #34D399;
     font-size: 2.5rem;
-    margin: auto;
-    text-align: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 12px;
 }
 
 .heading-container h2 {
@@ -41,9 +53,8 @@ body {
     font-weight: 400;
     color: #D5D4D8;
     font-size: 1.25rem;
-    margin-top: 20px;
-    margin-bottom: 50px;
     text-align: left;
+    margin-top: 12px;
 }
 
 .generate-password-button {
@@ -55,12 +66,23 @@ body {
    text-decoration: none;
    display: inline-block;
    border-radius: 4px;
-   margin: auto;
    font-family: 'Inter', 'Times New Roman', Times, serif;
    font-weight: 500;
    font-size: 1rem;
+   margin-top: 20px;
+   margin-bottom: 32px;
 }
 
-.password-form {
-    margin-top: 75px;
+.password-form input {
+    margin-top: 32px;
+    border: none;
+    border-radius: 2px;
+    background-color: #273549;
+    width: 211px;
+    height: 29px;
+    color: #55F991;
+    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
 }
