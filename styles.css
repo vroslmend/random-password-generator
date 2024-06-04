@@ -112,3 +112,52 @@ button:active {
 .password-form:hover i {
     opacity: 100%;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        max-height: 50vh;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .line-break {
+        width: 250px;
+        margin-left: 0px;
+    }
+
+    #top-text {
+        font-family: 'Karla', 'Times New Roman', Times, serif;
+        font-weight: 800;
+        color: white;
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #bottom-text {
+        font-family: 'Karla', 'Times New Roman', Times, serif;
+        font-weight: 800;
+        color: #34D399;
+        font-size: 2rem;
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .heading-container h2 {
+        font-family: 'Inter', 'Times New Roman', Times, serif;
+        font-weight: 400;
+        color: #D5D4D8;
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 12px;
+    }
+}

@@ -21,15 +21,16 @@ passwordContainer.addEventListener('click', () => {
         console.log("Password copied to clipboard");
         const message = document.createElement('div');
         message.textContent = 'Password copied to clipboard';
-        message.style.position = 'fixed';  // Make it positioned relative to the viewport
-        message.style.bottom = '35px';   // Position it 10px from the bottom
-        message.style.left = '50%';      // Center it horizontally
-        message.style.transform = 'translate(-50%)'; // Offset it horizontally by half its width
+        message.style.position = 'fixed'; 
+        message.style.bottom = '35px';   
+        message.style.left = '50%';      
+        message.style.transform = 'translate(-50%)'; 
         message.style.borderRadius = '12px';
 
         message.style.backgroundColor = '#d6ffd6';
         message.style.padding = '5px';
-        message.style.fontFamily = 'Inter', 'Times New Roman'; // Change font to Arial or any desired font
+        message.style.fontFamily = 'Inter', 'Times New Roman'; 
+        message.style.textAlign = 'center';
 
         passwordContainer.appendChild(message);
 
