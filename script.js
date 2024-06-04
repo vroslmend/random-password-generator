@@ -6,6 +6,7 @@ let password = "";
 
 function generateRandomPassword() {
     let passwordField = document.getElementById("output-form");
+    password = '';
 
     for (let i = 0; i < 15; i++) {
         let char = characters[Math.floor(Math.random() * 91)];
